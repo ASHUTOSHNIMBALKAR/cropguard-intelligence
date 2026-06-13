@@ -1,0 +1,12 @@
+path: ../dataset  # dataset root dir
+train: train/images  # train images (relative to 'path')
+val: val/images      # val images (relative to 'path')
+
+# Classes
+names:
+  0: Locust
+  1: Aphid
+  2: Bollworm
+  3: Brown Plant Hopper
+  4: Whitefly
+  5: Mite
