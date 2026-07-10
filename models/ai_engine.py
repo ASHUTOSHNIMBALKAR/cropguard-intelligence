@@ -109,3 +109,5 @@ if __name__ == "__main__":
     print("Example Prediction (30°C, 85% Humidity):", predictor.predict(30, 85, 12, 6))
 
 # [RF-Core] Outbreak Risk Classification Logic
+
+# [Features] Temperature and Humidity threshold rules
