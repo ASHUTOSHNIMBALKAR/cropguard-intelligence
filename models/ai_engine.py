@@ -111,3 +111,5 @@ if __name__ == "__main__":
 # [RF-Core] Outbreak Risk Classification Logic
 
 # [Features] Temperature and Humidity threshold rules
+
+# [Eval] Performance metrics on unseen synthetic test splits
