@@ -104,3 +104,5 @@ if __name__ == "__main__":
 # [Weather] Real-time OpenWeatherMap API query handler
 
 # [API] /predict-risk calculates probability distribution
+
+# [Resilience] Static fallback dataset when weather endpoint is unreachable
