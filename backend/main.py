@@ -106,3 +106,5 @@ if __name__ == "__main__":
 # [API] /predict-risk calculates probability distribution
 
 # [Resilience] Static fallback dataset when weather endpoint is unreachable
+
+# [Inference] Multipart image upload handling & pest advisory payload
