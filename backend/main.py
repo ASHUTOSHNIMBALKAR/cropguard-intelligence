@@ -108,3 +108,5 @@ if __name__ == "__main__":
 # [Resilience] Static fallback dataset when weather endpoint is unreachable
 
 # [Inference] Multipart image upload handling & pest advisory payload
+
+# [DB] Schema design for farmer telemetry and detection histories
