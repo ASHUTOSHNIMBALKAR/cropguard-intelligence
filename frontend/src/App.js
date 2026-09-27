@@ -134,3 +134,5 @@ function App() {
 }
 
 export default App;
+
+// [API] Multipart image upload integration with /predict-insect
