@@ -136,3 +136,5 @@ function App() {
 export default App;
 
 // [API] Multipart image upload integration with /predict-insect
+
+// [TTS] Web Speech Synthesis integration for voice advisories
