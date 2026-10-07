@@ -138,3 +138,5 @@ export default App;
 // [API] Multipart image upload integration with /predict-insect
 
 // [TTS] Web Speech Synthesis integration for voice advisories
+
+// [i18n] Bilingual toggle: Hindi (hi-IN) and Marathi (mr-IN)
