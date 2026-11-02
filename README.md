@@ -256,14 +256,6 @@ The application will open in your browser at `http://localhost:3000`.
 
 ---
 
-## 👨‍💻 Author
-
-**Ashutosh Nimbalkar**  
-- GitHub: [@ASHUTOSHNIMBALKAR](https://github.com/ASHUTOSHNIMBALKAR)
-- Email: [ashunimbalkar05@gmail.com](mailto:ashunimbalkar05@gmail.com)
-
----
-
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
