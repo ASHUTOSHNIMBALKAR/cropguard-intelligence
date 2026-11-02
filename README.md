@@ -41,45 +41,45 @@ CropGuard tackles this crisis at its root by combining **predictive weather-driv
 
 ```mermaid
 flowchart TD
-    subgraph Client["📱 Farmer's Device (React PWA)"]
+    subgraph Client["📱 Farmer Device - React PWA"]
         UI["Mobile Dashboard"]
         Geo["HTML5 Geolocation"]
         Cam["Field Camera / Upload"]
-        TTS["Web Speech Synth (Hindi/Marathi)"]
+        TTS["Web Speech Synth - Hindi / Marathi"]
     end
 
-    subgraph Backend["⚙️ Application Tier (FastAPI)"]
+    subgraph Backend["⚙️ Application Tier - FastAPI"]
         API["REST API Gateway"]
         WeatherHandler["Weather Ingestion Service"]
         PestEngine["Pest Inference Engine"]
     end
 
     subgraph ML_Services["🧠 Machine Learning Tier"]
-        RF["Random Forest Risk Classifier\n(pest_risk_model.pkl)"]
-        YOLO["YOLOv8 Detection Model\n(best.pt / ONNX / TFLite)"]
+        RF["Random Forest Risk Classifier<br/>pest_risk_model.pkl"]
+        YOLO["YOLOv8 Detection Model<br/>best.pt / ONNX / TFLite"]
     end
 
     subgraph External["🌐 External Services"]
         OWM["OpenWeatherMap API"]
-        MongoDB[("MongoDB Atlas\n(Telemetry & Pest Logs)")]
+        MongoDB[("MongoDB Atlas<br/>Telemetry & Pest Logs")]
     end
 
     UI --> Geo
-    Geo -->|Coordinates (Lat, Lon)| API
-    Cam -->|Field Image (Multipart)| API
+    Geo -->|"Coordinates (Lat, Lon)"| API
+    Cam -->|"Field Image (Multipart)"| API
 
     API --> WeatherHandler
-    WeatherHandler -->|Fetch Live Climate| OWM
-    WeatherHandler -->|Temp, Humidity, Rain| RF
-    RF -->|Risk Level & Confidence| API
+    WeatherHandler -->|"Fetch Live Climate"| OWM
+    WeatherHandler -->|"Temp, Humidity, Rain"| RF
+    RF -->|"Risk Level & Confidence"| API
 
     API --> PestEngine
-    PestEngine -->|Image Tensor| YOLO
-    YOLO -->|Class, Bounding Box, Confidence| API
+    PestEngine -->|"Image Tensor"| YOLO
+    YOLO -->|"Class, Bounding Box, Confidence"| API
 
-    API -->|Risk Status + Advisory + Vernacular Text| UI
+    API -->|"Risk Status + Advisory + Vernacular Text"| UI
     UI --> TTS
-    API -.->|Log Detections| MongoDB
+    API -.->|"Log Detections"| MongoDB
 ```
 
 ---
